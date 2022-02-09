@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-md-12 py-5">
 
-                <form  id="paymentForm">
+                <form id="paymentForm">
                     <div class="card">
                         <div class="card-header">
                             <h1>Payment form example</h1>
@@ -31,7 +31,7 @@
 
 
                         <div class="card-body">
-                             <!--Alerta-->
+                            <!--Alerta-->
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="alert alert-danger" role="alert">
@@ -45,34 +45,38 @@
                             <div class="row">
                                 <div class="col-md-5 ">
                                     <label for="Card"><b>Card #</b></label>
-                                    <input type="number" class="form-control" id="Card" name="Card"  maxlength="16"
-                                        placeholder="XXXXXXXXXXXXXXXX"required>
-                                     <!--<div class="invalid-feedback">
+                                    <input type="text" class="form-control" id="Card" name="Card" maxlength="16"
+                                        placeholder="XXXXXXXXXXXXXXXX" required>
+                                    <!--<div class="invalid-feedback">
                                         Please provide a valid Number Card
                                     </div>-->
                                 </div>
                                 <div class="col-md-3 ">
                                     <label for="Cvc"><b>CVC #</b></label>
-                                    <input type="number" class="form-control" id="Cvc" name="Cvc" placeholder="000" required>
+                                    <input type="text" class="form-control" id="Cvc" name="Cvc" placeholder="000"
+                                        required maxlength="3">
                                     <!--<div class="invalid-feedback">
                                         Please provide a valid CVC
                                     </div>-->
                                 </div>
                                 <div class="col-md-4 ">
                                     <label for="Amount"><b>Amount</b></label>
-                                    <input type="number" class="form-control" id="Amount" name="Amount" placeholder="0.00" required>
+                                    <input type="number" class="form-control" id="Amount" name="Amount"
+                                        placeholder="0.00" required>
                                 </div>
                             </div>
 
-                             <!-- Name, Last Name, -->
+                            <!-- Name, Last Name, -->
                             <div class="row">
                                 <div class="col-md-6 ">
                                     <label for="Name"><b>Name</b></label>
-                                    <input type="text " class="form-control" id="Name" name="Name" placeholder="Name" required>
+                                    <input type="text " class="form-control" id="Name" name="Name" placeholder="Name"
+                                        required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="LastName"><b>LastName</b></label>
-                                    <input type="text " class="form-control" id="LastName" name="LastName" placeholder="LastName" required>
+                                    <input type="text " class="form-control" id="LastName" name="LastName"
+                                        placeholder="LastName" required>
                                 </div>
                             </div>
                             <div class="row mt-2">
@@ -82,8 +86,8 @@
                                 </div>
                                 <div class="col-md-3 ">
                                     <label for="state"><b>state</b></label>
-                                    <select class="form-control " id="state" name="state"
-                                        placeholder="Pick a State" required>
+                                    <select class="form-control " id="state" name="state" placeholder="Pick a State"
+                                        required>
                                         <option></option disabled>
                                         <option>coquimbo</option>
                                         <option>aconcagua</option>
@@ -94,32 +98,33 @@
 
                                 <div class="col-md-3 ">
                                     <label for="PostalCode"><b>PostalCode</b></label>
-                                    <input type="text " class="form-control " id="PostalCode" name="PostalCode" required>
+                                    <input type="number" class="form-control " id="PostalCode" name="PostalCode"
+                                        required>
                                 </div>
                             </div>
 
                             <div class="row mt-2">
                                 <div class="col-md-6 ">
                                     <label for="weAccept"><b>We accept:</b></label>
-                                    <div class="checkbox w-50 bg-secondary d-flex justify-content-around text-white pt-1 rounded" required>
+                                    <div class="checkbox w-50 bg-secondary d-flex justify-content-around text-white pt-1 rounded"
+                                        required>
                                         <label for="mastercard">
-                                            <input type="radio" id="mastercard" name="mastercard"
-                                                value="mastercard">
+                                            <input type="radio" id="mastercard" name="creditcard" value="mastercard">
 
                                             <i class="fab fa-cc-mastercard"></i></label>
 
                                         <label for="visa">
-                                            <input type="radio" id="visa" name="visa" value="visa">
+                                            <input type="radio" id="visa" name="creditcard" value="visa">
 
                                             <i class="fab fa-cc-visa"></i></label>
 
                                         <label for="dinersClub">
-                                            <input type="radio" id="dinersClub" name="dinersClub" value="dinersClub">
+                                            <input type="radio" id="dinersClub" name="creditcard" value="dinersClub">
 
                                             <i class="fab fa-cc-diners-club"></i></label>
 
                                         <label for="amex">
-                                            <input type="radio" id="amex" name="amex" value="amex">
+                                            <input type="radio" id="amex" name="creditcard" value="amex">
 
                                             <i class="fab fa-cc-amex"></i></label>
 
@@ -131,7 +136,8 @@
 
                                 <div class="col-md-6 mt-2">
                                     <label for="texto"><b>Message</b></label>
-                                    <textarea name="texto" id="texto" cols="30" rows="4" class="form-control"></textarea>
+                                    <textarea name="texto" id="texto" cols="30" rows="4"
+                                        class="form-control"></textarea>
                                     <div class="feedback">
                                         Add any notes here.
                                     </div>
